@@ -23,7 +23,7 @@
 
   function toPercent(value, lower, upper) {
     if (lower === undefined) { lower = 0; }
-    if (upper === undefined) { lower = 1; }
+    if (upper === undefined) { upper = 1; }
     return (value - lower) / (upper - lower);
   }
 
