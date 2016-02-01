@@ -166,9 +166,9 @@
         effect: {show: true},
         itemStyle: {
           normal: {
-            color: Wrap('markPoint.itemStyle.normal.color', function (point) {
+            color: function (point) {
               return mix(point.data.value, '#00ff00', '#ff0000', 48000, 524000);
-            }),
+            },
             label: {show: true}
           }
         },
